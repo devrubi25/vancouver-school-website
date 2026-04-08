@@ -1900,7 +1900,7 @@ body {
     align-items: center;
     padding: calc(1rem + 4vh) calc(1rem + 6vw);
     transition: all 0.35s ease-in-out;
-    background-color: var(--color-navy-dark);
+    background-color: var(--color-mint-green);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     height: 100vh;
     position: fixed;
@@ -1928,7 +1928,7 @@ body {
   .hamburger__line {
     display: block;
     min-height: 3px;
-    background-color: var(--color-blue-dark);
+    background-color: var(--color-navy-dark);
     transition: all 0.3s ease;
     z-index: 11;
   }
