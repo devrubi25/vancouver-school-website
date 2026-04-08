@@ -1,0 +1,45 @@
+@use "../general-styles/padding" as pad;
+@use "../general-styles/gradient" as grad;
+@use "../general-styles/colors" as clrs;
+@use "../general-styles/typography" as type;
+
+@media  screen and (max-width: 800px) {
+
+  // ABOUT STYLING START ----------
+  .about {
+    &__container {
+      flex-direction: column;
+
+      &-content {
+        width: 100%;
+      }
+
+      figure {
+        width: 100%;
+        height: 100%;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+
+  .contacts {
+    flex-direction: column;
+
+    &__content,
+    &__form {
+      width: 100%;
+    }
+  }
+  // FOOTER START ------------
+  .footer {
+    &__container {
+      flex-direction: column;
+    }
+  }
+
+  
+}

@@ -1,0 +1,28 @@
+@use "../general-styles/colors" as clrs;
+@use "../general-styles/typography" as type;
+
+.sec-mini-title {
+    font-size: type.font-size-st(sc);
+    color: var(--color-blue-dark);
+
+    position: relative;
+    display: inline-block;
+
+    &::before, &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        height: 0.2rem;
+        width: 2rem;
+        transform: translateY(-50%);
+        background-color: var(--color-white);
+    }
+
+    &::before {
+        left: -60%;
+    }
+
+    &::after {
+        right: -60%;
+    }
+}

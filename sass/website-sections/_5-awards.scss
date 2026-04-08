@@ -1,0 +1,27 @@
+@use "../general-styles/padding" as pad;
+@use "../general-styles/typography" as type;
+
+.awards {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-light-greyish-blue);
+  align-items: center;
+  &__title {
+    flex-shrink: 0;
+    align-items: start;
+  }
+
+  &__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    a {
+      width: 20%;
+      img {
+        width: 100%;
+
+      }
+    }
+  }
+}

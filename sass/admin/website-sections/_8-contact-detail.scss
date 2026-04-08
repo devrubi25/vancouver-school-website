@@ -1,0 +1,220 @@
+.contact-detail {
+  grid-column: 3 / container-end;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 2rem;
+
+  @media (max-width: 968px) {
+    grid-column: container-start / container-end;
+  }
+
+  /* Header section */
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-bottom: 1px solid var(--color-white);
+    padding-bottom: 1rem;
+
+    & > * {
+      margin: 0;
+    }
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--color-black);
+  }
+
+  &__meta {
+    font-size: 1.3rem;
+    color: var(--color-gray-light);
+  }
+
+  /* Body */
+  &__body {
+    background:var(--color-white);
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px var(--color-black-transparent);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  &__subject {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--color-blue-primary);
+    margin-bottom: 0.4rem;
+  }
+
+  &__message {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: var(--color-deep-dark-grayish-blue);
+    white-space: pre-line;
+  }
+
+  &__info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    border-top: 1px solid var(--color-white);
+    padding-top: 1rem;
+
+    p {
+      font-size: 1.4rem;
+      color: var(--color-black);
+
+      strong {
+        color: var(--color-gray-light);
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  /* Reply toggle button */
+  &__reply-toggle {
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: var(--color-gray-light);
+    color:var(--color-blue-primary);
+    border: none;
+    border-radius: 0.8rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+    padding: 0.9rem 1.4rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background:var(--color-pale-blu);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px var(--color-dark-blue-or-indigo);
+    }
+
+    i {
+      font-size: 1.3rem;
+    }
+  }
+
+  /* Reply form */
+  &__reply-form {
+    margin-top: 1.5rem;
+    background: var(--color-alabaster-white-gray98);
+    border: 1px solid var(--color-gray-light);
+    border-radius: 0.8rem;
+    padding: 1.4rem;
+    display: none;
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: all 0.25s ease;
+
+    &.active {
+      display: block;
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+  }
+
+  &__reply-group {
+    margin-bottom: 1rem;
+  }
+
+  &__reply-label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    color: var(--color-deep-dark-grayish-blue);
+  }
+
+  &__reply-input,
+  &__reply-textarea {
+    width: 100%;
+    padding: 0.7rem 0.9rem;
+    border: 1px solid var(--color-gray-light);
+    border-radius: 6px;
+    font-size: 1.4rem;
+    background-color:var(--color-white);
+    color: var(--color-black);
+    font-family: inherit;
+
+    &:focus {
+      border-color: var(--color-azure);
+      outline: none;
+      box-shadow: 0 0 0 2px var(--color-roya-blue);
+    }
+  }
+
+  &__reply-actions {
+    display: flex;
+    gap: 0.8rem;
+    justify-content: flex-end;
+    margin-top: 1rem;
+  }
+
+  &__send {
+    background: var(--color-azure);
+    color:var(--color-white);
+    border: none;
+    padding: 0.7rem 1.4rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s;
+
+    &:hover {
+      background: var(--color-strong-deep-blue);
+    }
+  }
+
+  &__cancel {
+    background: transparent;
+    border: 1px solid var(--color-gray-light);
+    color: var(--color-Davy-s-Grey);
+    padding: 0.7rem 1.4rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s;
+
+    &:hover {
+      background: var(--color-white);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(6px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (max-width: 480px) {
+    &__title {
+      font-size: 1.6rem;
+    }
+
+    &__message {
+      font-size: 1.3rem;
+    }
+
+    &__reply-toggle,
+    &__send,
+    &__cancel {
+      font-size: 1.3rem;
+      padding: 0.7rem 1.1rem;
+    }
+  }
+}

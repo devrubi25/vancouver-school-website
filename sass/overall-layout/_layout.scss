@@ -1,0 +1,39 @@
+.container {
+  display: grid;
+  grid-template-columns: [container-start] repeat(12, minmax(min-content, 12.5rem))[container-end];
+  justify-content: center;
+}
+.page-width {
+  grid-column: container-start/container-end;
+}
+
+// BAck to Top
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 50%;
+  background: var(--gradient-nav-btn);
+  color: var(--color-navy-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+  transition: all .3s ease;
+  z-index: 999;
+}
+
+.back-to-top.show-back-to-top {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+

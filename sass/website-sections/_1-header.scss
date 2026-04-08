@@ -1,0 +1,42 @@
+// ===== header.scss =====
+@use "../general-styles/colors" as clrs;
+@use "../general-styles/padding" as pad;
+@use "../general-styles/typography" as type;
+
+body {
+  background-color: #eaf4fd;
+}
+
+.header {
+  padding: pad.padding-d-v(s) pad.padding-d-h(m);
+  box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.3);
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 2rem;
+
+    &__logo-link {
+      width: 15rem;
+    }
+
+    &__logo {
+      height: 100%;
+      width: 100%;
+    }
+
+    &__nav {
+      display: flex;
+      gap: 3rem;
+      margin-left: auto;
+      z-index: 9999;
+    }
+
+    &__nav-link {
+      font-size: type.font-size-st(s);
+      // font-weight: 700;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: var(--color-navy-dark);
+    }
+}

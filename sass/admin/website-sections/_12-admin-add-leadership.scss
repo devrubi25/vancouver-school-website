@@ -1,0 +1,145 @@
+// sass/admin/admin-sections/_admin-leadership-form.scss
+
+@use "../general-styles/colors" as clrs;
+@use "../general-styles/padding" as pad;
+@use "../general-styles/typography" as type;
+
+/* =====================================
+   ADD LEADERSHIP SECTION WRAPPER
+===================================== */
+
+.admin-leadership-add {
+  grid-column: 3 / container-end;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 968px) {
+    grid-column: container-start / container-end;
+  }
+}
+
+/* HEADER */
+.admin-leadership-add__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+}
+
+.admin-leadership-add__title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-black);
+  margin: 0;
+}
+
+.admin-leadership-add__back-btn {
+  background: var(--color-gray-light);
+  color: var(--color-deep-dark-grayish-blue);
+  padding: 0.8rem 1.4rem;
+  border-radius: 0.6rem;
+  text-decoration: none;
+  font-size: 1.4rem;
+  display: inline-flex;
+  align-items: center;
+  gap: .6rem;
+  font-weight: 600;
+  transition: all .25s ease;
+  align-self: flex-start;
+
+  &:hover {
+    background:var(--color-gray-light);
+  }
+
+  i {
+    font-size: 1.3rem;
+  }
+}
+
+/* =====================================
+   FORM STYLING
+===================================== */
+
+.leadership-form {
+  max-width: 650px;
+  background:var(--color-white);
+  padding: 2rem 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 10px var(--color-black-transparent);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @media (max-width: 600px) {
+    padding: 1.5rem;
+  }
+}
+
+.leadership-form__group {
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+}
+
+.leadership-form__label {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--color-deep-dark-grayish-blue);
+}
+
+.leadership-form__input,
+.leadership-form__textarea {
+  width: 100%;
+  padding: 1rem 1.3rem;
+  font-size: 1.35rem;
+  border: 2px solid var(--color-gray-light);
+  border-radius: 0.8rem;
+  transition: all .25s ease;
+
+  &:focus {
+    outline: none;
+    border-color: var(--color-blue-primary);
+    box-shadow: 0 0 0 3px var(--color-a-very-light-transparent-shade-of-indigo);
+  }
+}
+
+.leadership-form__textarea {
+  resize: vertical;
+}
+
+/* SUBMIT BUTTON */
+.leadership-form__submit {
+  align-self: flex-start;
+  background:var(--color-blue-primary);
+  color:var(--color-white);
+  padding: 1rem 1.8rem;
+  border-radius: 0.7rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1.45rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: .8rem;
+  transition: background .25s ease;
+
+  i {
+    font-size: 1.4rem;
+  }
+
+  &:hover {
+    background: var(--color-blue-primary);
+  }
+
+  @media (max-width: 600px) {
+    width: 100%;
+    justify-content: center;
+  }
+}

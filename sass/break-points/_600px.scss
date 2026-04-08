@@ -1,0 +1,28 @@
+@use "../general-styles/padding" as pad;
+@use "../general-styles/gradient" as grad;
+@use "../general-styles/colors" as clrs;
+@use "../general-styles/typography" as type;
+
+@media  screen and (max-width: 600px) {
+  // Utility class
+  .sec-title {
+    font-size: type.font-size-st(mc);
+  }
+  // Principle section
+  .principal {
+  flex-direction: column;
+  }
+
+  // Admission FAQ
+  .admission-faq__question .faq-icon {
+    flex-shrink: 0;    // prevents squishing
+    width: 38px;       // slightly smaller for small screens
+    height: 38px;
+  }
+
+  .admission-faq__question span {
+    padding-right: 1rem;   // ensures space between text + icon
+    white-space: normal;   // allow wrapping
+  }
+
+}

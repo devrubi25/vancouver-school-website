@@ -1,0 +1,40 @@
+@use "sass:map";
+
+:root {
+  --color-white: hsl(0 0% 100%);
+  --color-navy-dark: #111232;
+  --color-dark-charcoal: #313131;
+  --color-green-medium: hsl(126 30% 45%);
+  --color-green-tint: #e3f0e4;
+  --color-mint-green : #bde3c1;
+  --color-atomic-orange: #f48c06;
+  --color-moderate-cyan:#92c0c6;
+  --color-light-greyish-blue: hsl(210, 14%, 89%);
+  --color-cyan-light: hsl(180 50% 91%);
+  --color-light-gray-silver: rgb(152, 203, 82, 0.9);
+
+  // social colors
+  --color-fb: #1877f2;
+  --color-twitter: #1d9bf0;
+  --color-ig: #e4405f;
+  --color-yt: #ff0000;
+
+  /* Gradient Variables */
+  --gradient-cyan: linear-gradient( #f7fbfb , #d8f2f2);
+  --gradient-nav-btn: linear-gradient(to bottom right, #bde3c1 , #dff3f3);
+}
+
+// Sass map with gradients
+$colors-theme: (
+  "white": var(--color-white),
+  "navy-dark": var(--color-navy-dark),
+  "green-light": var(--color-green-light),
+  "green-medium": var(--color-green-medium),
+  "blue-dark": var(--color-blue-dark),
+  "blue-bright": var(--color-blue-bright),
+  "cyan-light": var(--color-cyan-light),
+);
+
+$gradients-theme: (
+  "cyan": var(--gradient-cyan),
+);

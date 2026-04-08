@@ -1,0 +1,21 @@
+
+// In _sec-link.scss
+@use "../general-styles/colors" as clrs;
+@use "../general-styles/padding" as pad;
+@use "../general-styles/typography" as type;
+
+
+
+.sec-link {
+  color: var(--color-navy-darkt);
+  font-size: type.font-size-st(s);
+  padding: pad.padding-st-v(s) ;
+  border-radius: 40rem;
+
+  border: 1px solid var(--color-light-gray-silver);
+
+  &:hover {
+    background-color: var(--color-light-gray-silver);
+    color: var(--color-white);
+  }
+}

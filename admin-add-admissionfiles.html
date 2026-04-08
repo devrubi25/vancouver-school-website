@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SJS Admin - Dashboard</title>
+
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Quilleditor -->
+    <link
+      href="https://cdn.quilljs.com/1.3.7/quill.snow.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="up/css/admin-style.css" />
+  </head>
+  <body class="container">
+    <!-- Mobile Overlay -->
+    <div class="admin-nav__overlay" id="adminNavOverlay"></div>
+
+    <!-- Left Sidebar Navigation -->
+    <nav class="admin-nav padd" id="adminNav">
+      <a href="admin-dashboard.html" class="admin-nav__logo">
+        <img src="up/images/sjsToraiLogo1.png" alt="Logo" class="logo" />
+      </a>
+
+      <ul class="admin-nav__links">
+        <!-- Dashboard -->
+        <li>
+          <a
+            href="admin-dashboard.html"
+            class="admin-nav__link admin-nav__link--active"
+          >
+            <i class="fa-solid fa-house-chimney"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+
+        <!-- Homepage -->
+        <li class="admin-nav__item admin-nav__item--has-children">
+          <button type="button" class="admin-nav__link admin-nav__toggle">
+            <i class="fa-solid fa-layer-group"></i>
+            <span>Homepage</span>
+            <i class="fa-solid fa-chevron-down admin-nav__arrow"></i>
+          </button>
+          <ul class="admin-subnav">
+            <li><a href="admin-notices.html">Notices</a></li>
+            <li><a href="admin-leadership.html">Leadership</a></li>
+            <li><a href="admin-principal.html">Principal Message</a></li>
+            <li><a href="admin-homegallery.html">Homepage Gallery</a></li>
+            <li><a href="admin-testimonials.html">Testimonials</a></li>
+          </ul>
+        </li>
+
+        <!-- Academics -->
+        <li class="admin-nav__item admin-nav__item--has-children">
+          <button type="button" class="admin-nav__link admin-nav__toggle">
+            <i class="fa-solid fa-user-graduate"></i>
+            <span>Academics</span>
+            <i class="fa-solid fa-chevron-down admin-nav__arrow"></i>
+          </button>
+          <ul class="admin-subnav">
+            <li><a href="admin-teachers.html">Teachers</a></li>
+          </ul>
+        </li>
+
+        <!-- News & Events -->
+        <li class="admin-nav__item admin-nav__item--has-children">
+          <button type="button" class="admin-nav__link admin-nav__toggle">
+            <i class="fa-solid fa-newspaper"></i>
+            <span>News and Events</span>
+            <i class="fa-solid fa-chevron-down admin-nav__arrow"></i>
+          </button>
+          <ul class="admin-subnav">
+            <li><a href="admin-news.html">News</a></li>
+            <li><a href="admin-events.html">Events</a></li>
+          </ul>
+        </li>
+
+        <!-- Gallery -->
+        <li class="admin-nav__item admin-nav__item--has-children">
+          <button type="button" class="admin-nav__link admin-nav__toggle">
+            <i class="fa-solid fa-images"></i>
+            <span>Gallery</span>
+            <i class="fa-solid fa-chevron-down admin-nav__arrow"></i>
+          </button>
+          <ul class="admin-subnav">
+            <li><a href="admin-gallery-categories.html">Categories</a></li>
+            <li><a href="admin-gallery-photos.html">Photos</a></li>
+          </ul>
+        </li>
+
+        <!-- Admissions -->
+        <li class="admin-nav__item admin-nav__item--has-children">
+          <button type="button" class="admin-nav__link admin-nav__toggle">
+            <i class="fa-solid fa-folder-open"></i>
+            <span>Admissions</span>
+            <i class="fa-solid fa-chevron-down admin-nav__arrow"></i>
+          </button>
+          <ul class="admin-subnav">
+            <li><a href="admin-admission-files.html">Admission Files</a></li>
+            <li><a href="admin-faqs.html">FAQs</a></li>
+          </ul>
+        </li>
+
+        <!-- Contact -->
+        <li>
+          <a href="admin-contacts.html" class="admin-nav__link">
+            <i class="fa-solid fa-address-book"></i>
+            <span>Contacts</span>
+          </a>
+        </li>
+      </ul>
+
+      <ul class="admin-nav__links admin-nav__links--bottom">
+        <li>
+          <a href="/logout.php" class="admin-nav__link">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <span>Logout</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="admin-main page-width padd">
+      <!-- ADMIN HEADER -->
+      <header class="admin-header padd">
+        <div class="admin-header__greeting">
+          <h2 class="admin-header__mini-title sec-title">Good Morning</h2>
+          <h1 class="admin-header__title sec-title">Fr. Charls</h1>
+        </div>
+
+        <!-- Mobile hamburger -->
+        <button
+          class="admin-nav__hamburger"
+          id="adminNavToggle"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="admin-header__icons">
+          <div class="admin-header__search">
+            <button
+              type="button"
+              class="admin-header__icon-btn"
+              id="searchToggle"
+              aria-expanded="false"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <form class="admin-header__search-form" id="searchForm">
+              <input type="search" placeholder="Search…" />
+            </form>
+          </div>
+          <button class="admin-header__icon-btn">
+            <i class="fa-solid fa-bell"></i>
+          </button>
+          <button class="admin-header__icon-btn">
+            <i class="fa-solid fa-envelope"></i>
+          </button>
+          <figure class="admin-header__profile">
+            <img src="up/images/principal.jpg" alt="Admin profile" />
+          </figure>
+        </div>
+      </header>
+
+      <section class="admin-add-admissionfile">
+        <!-- HEADER -->
+        <div class="admin-add-admissionfile__header">
+          <h2 class="admin-add-admissionfile__title">Add Admission File</h2>
+
+          <a
+            href="admin-admission-files.html"
+            class="admin-add-admissionfile__back-btn"
+          >
+            <i class="fa-solid fa-arrow-left"></i> Back
+          </a>
+        </div>
+
+        <!-- FORM -->
+        <form
+          action="admin-admissionfile-insert.php"
+          method="POST"
+          enctype="multipart/form-data"
+          class="admissionfile-form"
+        >
+          <!-- FILE TYPE -->
+          <div class="admissionfile-form__group">
+            <label class="admissionfile-form__label">Select File Type</label>
+
+            <select
+              name="file_type"
+              class="admissionfile-form__select"
+              required
+            >
+              <option value="">Choose type</option>
+              <option value="fee_structure">Fee Structure</option>
+              <option value="prospectus">School Prospectus</option>
+              <option value="admission_form">Admission Form</option>
+            </select>
+          </div>
+
+          <!-- OPTIONAL TITLE -->
+          <div class="admissionfile-form__group">
+            <label class="admissionfile-form__label">Title (optional)</label>
+            <input
+              type="text"
+              name="file_title"
+              placeholder="Fee Structure 2025, Prospectus 2024, etc."
+              class="admissionfile-form__input"
+            />
+          </div>
+
+          <!-- FILE UPLOAD WITH FILE SIZE INFO -->
+          <div class="admissionfile-form__group">
+            <label class="admissionfile-form__label">Upload PDF File</label>
+
+            <div class="admissionfile-uploadrow">
+              <input
+                type="file"
+                name="file_upload"
+                id="admissionFileInput"
+                accept="application/pdf"
+                class="admissionfile-form__input"
+                required
+              />
+
+              <!-- File Info Box -->
+              <div class="admissionfile-fileinfo" id="fileInfoBox">
+                <p class="fileinfo__name">No file selected</p>
+                <p class="fileinfo__size">File size: —</p>
+                <p class="fileinfo__note">Allowed: PDF only</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- SUBMIT -->
+          <button type="submit" class="admissionfile-form__submit">
+            <i class="fa-solid fa-upload"></i> Upload File
+          </button>
+        </form>
+      </section>
+
+      <!-- FILE SIZE SCRIPT -->
+      <script>
+        const fileInput = document.getElementById("admissionFileInput");
+        const fileInfoBox = document.getElementById("fileInfoBox");
+
+        fileInput.addEventListener("change", () => {
+          const file = fileInput.files[0];
+
+          if (!file) {
+            fileInfoBox.querySelector(".fileinfo__name").textContent =
+              "No file selected";
+            fileInfoBox.querySelector(".fileinfo__size").textContent =
+              "File size: —";
+            return;
+          }
+
+          // File name
+          fileInfoBox.querySelector(".fileinfo__name").textContent = file.name;
+
+          // File size in KB/MB
+          const sizeKB = (file.size / 1024).toFixed(1);
+          const sizeMB = (file.size / (1024 * 1024)).toFixed(2);
+
+          fileInfoBox.querySelector(".fileinfo__size").textContent =
+            file.size < 1024 * 1024
+              ? `File size: ${sizeKB} KB`
+              : `File size: ${sizeMB} MB`;
+        });
+      </script>
+    </main>
+
+    <!-- Include the Quill library -->
+    <script src="https://cdn.quilljs.com/1.3.7/quill.js"></script>
+    <!-- imageResize MOdule -->
+    <script src="https://cdn.jsdelivr.net/npm/quill-image-resize-module@3.0.0/image-resize.min.js"></script>
+    <script src="up/js/admin.js"></script>
+  </body>
+</html>

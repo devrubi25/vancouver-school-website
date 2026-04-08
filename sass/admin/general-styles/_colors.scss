@@ -1,0 +1,157 @@
+@use "sass:map";
+// admin root colors
+:root {
+  /* ------ CORE BASE COLORS ------ */
+  --color-white: #ffffff;
+  /* earlier:
+   --color-white (same), 
+   --color-alabaster-white-gray98 (#fafafa), 
+   --color-anti-flash-white (#f3f4f6), 
+   --color-dr-white-white-or-a-very-light-ghost-white-shade (#f9fafb) */
+
+  --color-black: #111827;
+  /* earlier:
+   --color-navy-dark (#111232),
+   --color-grayish-navy (#111827), 
+   --color-simply-a-dark-grayish-navy (#111827), 
+   --color-dark-gunmetal (#1a1d29) */
+
+  /* ------ GRAYS ------ */
+  --color-gray-light: #e5e7eb;
+  /* earlier:
+   --color-bright-gray (#e5e7eb),
+   --color-light-greyish-blue (hsl(210 14% 89%)),
+   --color-light-grayish-blue (#d1d5db, #6b7280), 
+   --color-gainsboro (#ddd) */
+
+  --color-gray-medium: #9ca3af;
+  /* earlier: 
+  --color-grayish-blue (#9ca3af), 
+  --color-Heather-Grey (#9a9ba2), 
+  --color-medium-shade-of-gray (#7f7f83), 
+  --color-lucky-grey (#777),
+   --color-goshawk-grey (#444) */
+
+  /* ------ BLUES ------ */
+  --color-blue-primary: #3b82f6;
+  /* earlier:
+   --color-blue-dark (hsl(219 49% 47%)),
+   --color-blue-bright (#578fff),
+   --color-warm-blue (#6366f1), 
+   --color-Indigo (#4338ca), 
+   --color-vibrant-bold-Indigo (#4f46e5),
+   --color-Intergalactic-Highway (#1e3a8a),
+   --color-Deep-Navy-Blue (#1e40af) */
+
+  --color-blue-tint: #dbeafe;
+  /* earlier:
+   --color-light-grayish-blue (#dbeafe), 
+   --color-very-pale-light-blue-or-periwinkle (#e0e7ff),
+   --color-blue-or-periwinkle (#e0e7ff),
+   --color-pale-blue (#bfdbfe),
+   --color-simply-a-light-tint-of-blue (#bfdbfe) */
+
+  /* ------ GREEN ------ */
+  --color-green-primary: #16a34a;
+  /* earlier: 
+  --color-green-light (hsl(126 30% 58%)),
+   --color-green-medium (hsl(126 30% 45%)),
+   --color-mint-green (#bde3c1), 
+   --color-pale-mint-green-or-seafoam-green (#d1fae5),
+   --color-bold-natural-green (#16a34a) */
+
+  /* ------ WARNING / ACCENT ------ */
+  --color-yellow-warm: #fef3c7;
+  /* earlier:
+   --color-warm-pale-yellow (#fef3c7), 
+   --color-dark-orange-Amber (#78350f) */
+
+  /* ------ ERROR / ALERT ------ */
+  --color-red-primary: #dc2626;
+  /* earlier: 
+  --color-strong-vibrant-saturated-red (#dc2626), 
+  --color-red (#ef4444),
+  --color-a-very-soft-pale-light-red (#fecaca), 
+  --color-misty-rose-or-blush (#fee2e2) */
+
+  /* ------ TRANSPARENT / UTILITIES ------ */
+  --color-black-transparent: rgba(0, 0, 0, 0.1);
+  /* earlier: --color-low-opacity-black (0.08), 
+  --color-a-very-dark-semi-transparent-black (0.12),
+  --color-semi-transparent-black (0.5), 
+  --color-represents-a-nearly-transparent-black (0.15),
+  --color-a-shade-of-black (0.05), 
+  --color-very-dark-almost-transparent-black (0.08) */
+}
+
+//   /* Gradient Variables */
+//   --gradient-cyan: linear-gradient(#f7fbfb, #d8f2f2);
+//   --gradient-nav-btn: linear-gradient(to bottom right, #bde3c1, #dff3f3);
+// }
+
+// Sass map with gradients
+$colors-theme: (
+  "white": var(--color-white),
+  "navy-dark": var(--color-navy-dark),
+  "green-light": var(--color-green-light),
+  "green-medium": var(--color-green-medium),
+  "blue-dark": var(--color-blue-dark),
+  "blue-bright": var(--color-blue-bright),
+  "cyan-light": var(--color-cyan-light),
+);
+
+$gradients-theme: (
+  "cyan": var(--gradient-cyan),
+);
+
+//Sass Color Variables (part-vi)
+// $color-theme   [is colors Object here, like a group of colors]
+
+$colors-theme: (
+  "1": hsl(216 33% 97%),
+  "2": hsl(327 97% 48%),
+  "3": hsl(253 82% 42%),
+  "4": hsl(0 0% 100%),
+);
+
+@function color-theme($clr-theme) {
+  @return map.get($colors-theme, $clr-theme);
+}
+// color-theme [is function name]  &  $clr-theme [is function argument]
+// @function>>   color-theme($color-theme-1) this argument would not be reusable
+
+//Write 1 function and use it millions times.
+
+$colors-type: (
+  "1": hsl(0 0% 100%),
+  "2": hsl(238 50% 13%),
+  "3": hsl(327 97% 48%),
+  "4": hsl(253 82% 42%),
+  "5": hsl(0 0% 45%),
+  "6": hsl(0 0% 96%),
+);
+
+@function color-type($clr-type) {
+  @return map.get($colors-type, $clr-type);
+}
+
+$color-links: (
+  "1": hsl(0 0% 100%),
+  "2": hsl(327 97% 48%),
+  "3": hsl(253 82% 42%),
+  "4": hsl(238 50% 13%),
+);
+@function color-link($clr-link) {
+  @return map.get($color-links, $clr-link);
+}
+
+$colors-social: (
+  "facebook": hsl(221 44% 42%),
+  "twitter": hsl(206 82% 63%),
+  "linkedin": hsl(201 100% 35%),
+  "instagram": hsl(329 100% 50%),
+);
+
+@function color-social($clr-social) {
+  @return map.get($colors-social, $clr-social);
+}
