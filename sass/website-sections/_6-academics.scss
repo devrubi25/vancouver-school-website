@@ -27,9 +27,9 @@
         object-fit: cover;
 
         &:hover {
-          transform: scale(1.1);
+          // transform: scale(1);
           transition: all 0.35s ease-in-out;
-          border-radius: 50%;
+          // border-radius: 5%;
         }
       }
     }

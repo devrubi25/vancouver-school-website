@@ -611,9 +611,7 @@ body {
      object-fit: cover;
 }
 .academics__blog figure img:hover {
-  transform: scale(1.1);
   transition: all 0.35s ease-in-out;
-  border-radius: 50%;
 }
 .academics__blog-content {
   padding: 1rem;
