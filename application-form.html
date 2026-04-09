@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application Form For Admission</title>
+    <link rel="stylesheet" href="up/css/main-style.css" />
+  </head>
+  <body>
+    <div class="admission-page">
+      <div class="admission-card">
+        <h1>Application Form For Admission</h1>
+
+        <section class="school-info">
+          <label>
+            Please Select Branch:
+            <select>
+              <option>ESH</option>
+              <option>ABC</option>
+            </select>
+          </label>
+          <label>
+            Registration Number:
+            <input type="text" value="123456" />
+          </label>
+          <div class="photo-upload">
+            <span>Photo of the Student</span>
+            <input type="file" accept="image/*" />
+          </div>
+        </section>
+
+        <section class="student-details">
+          <h2>Student Details</h2>
+          <label>First Name: <input type="text" value="Nagendra" /></label>
+          <label>Middle Name: <input type="text" value="Babu" /></label>
+          <label>Last Name: <input type="text" value="Yadav" /></label>
+          <label
+            >Gender:
+            <select>
+              <option>Male</option>
+              <option>Female</option>
+            </select>
+          </label>
+          <label>Date of Birth: <input type="date" /></label>
+          <label
+            >Admission To Class:
+            <select>
+              <option>4th</option>
+              <option>5th</option>
+            </select>
+          </label>
+        </section>
+
+        <section class="parent-details">
+          <h2>Parent/Guardian (Father)</h2>
+          <label>Father First Name: <input type="text" value="Ashok" /></label>
+          <label>Father Last Name: <input type="text" value="Babu" /></label>
+          <label
+            >Email Address: <input type="email" value="example@gmail.com"
+          /></label>
+          <label
+            >Phone Number: <input type="tel" value="+91 123 456 7890"
+          /></label>
+          <label
+            >Education Qualification: <input type="text" value="B.Tech"
+          /></label>
+          <label>Residential Address: <textarea></textarea></label>
+        </section>
+
+        <section class="parent-details">
+          <h2>Parent/Guardian (Mother)</h2>
+          <label
+            >Mother First Name: <input type="text" value="Anuradha"
+          /></label>
+          <label>Mother Last Name: <input type="text" value="Awi" /></label>
+          <label
+            >Email Address: <input type="email" value="example@gmail.com"
+          /></label>
+          <label
+            >Phone Number: <input type="tel" value="+91 123 456 7890"
+          /></label>
+          <label
+            >Education Qualification: <input type="text" value="B.Tech"
+          /></label>
+          <label>Residential Address: <textarea></textarea></label>
+        </section>
+
+        <button type="submit" class="apply-btn">Apply Now →</button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -315,6 +315,158 @@ body {
 }
 
 /* ❌ Remove your old @keyframes notice-scroll completely */
+.register-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: theme-gradient("cyan");
+  font-family: "Segoe UI", sans-serif;
+}
+.register-page .register-card {
+  background: theme-color("white");
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  padding: 2rem;
+}
+.register-page .register-card h1 {
+  text-align: center;
+  color: theme-color("navy-dark");
+  margin-bottom: 1.5rem;
+}
+.register-page .register-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.register-page .register-card form input {
+  padding: 0.75rem;
+  border: 1px solid theme-color("cyan-light");
+  border-radius: 8px;
+  font-size: 1.5rem;
+  color: theme-color("dark-charcoal");
+  border: 1px solid rgb(207, 204, 204);
+}
+.register-page .register-card form input:focus {
+  outline: none;
+  border-color: theme-color("green-medium");
+  box-shadow: 0 0 0 3px rgba(189, 227, 193, 0.5);
+}
+.register-page .register-card form button {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  background: theme-gradient("nav-btn");
+  color: theme-color("navy-dark");
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.register-page .register-card form button:hover {
+  background: theme-color("atomic-orange");
+  color: theme-color("white");
+}
+.register-page .register-card .social-login {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+.register-page .register-card .social-login a {
+  margin: 0 0.5rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: theme-color("dark-charcoal");
+}
+.register-page .register-card .social-login a.facebook {
+  color: var(--color-fb);
+}
+.register-page .register-card .social-login a.twitter {
+  color: var(--color-twitter);
+}
+.register-page .register-card .social-login a.instagram {
+  color: var(--color-ig);
+}
+.register-page .register-card .social-login a.youtube {
+  color: var(--color-yt);
+}
+
+.admission-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: theme-gradient("cyan");
+  padding: 2rem;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 1.5rem;
+}
+
+.admission-card {
+  background: theme-color("white");
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  width: 100%;
+  padding: 2rem;
+}
+.admission-card h1 {
+  text-align: center;
+  color: theme-color("navy-dark");
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+.admission-card h2 {
+  color: theme-color("green-medium");
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.75rem;
+}
+.admission-card section {
+  margin-bottom: 1.5rem;
+}
+.admission-card section label {
+  display: block;
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+  color: theme-color("dark-charcoal");
+}
+.admission-card section label input, .admission-card section label select, .admission-card section label textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid theme-color("cyan-light");
+  border-radius: 8px;
+  font-size: 1.5rem;
+  margin-top: 0.25rem;
+  color: theme-color("dark-charcoal");
+  border: 1px solid rgb(187, 183, 183);
+}
+.admission-card section label input:focus, .admission-card section label select:focus, .admission-card section label textarea:focus {
+  outline: none;
+  border-color: theme-color("green-medium");
+  box-shadow: 0 0 0 3px rgba(189, 227, 193, 0.5);
+}
+.admission-card section label textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+.admission-card .apply-btn {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  background: theme-gradient("nav-btn");
+  color: theme-color("navy-dark");
+  font-weight: bold;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.admission-card .apply-btn:hover {
+  background: theme-color("atomic-orange");
+  color: theme-color("white");
+}
+
 .hero {
   display: flex;
   align-items: center;
