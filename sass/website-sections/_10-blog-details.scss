@@ -1,0 +1,23 @@
+@use "../general-styles/padding" as pad;
+@use "../general-styles/typography" as type;
+
+
+.blog-details {
+
+  display: flex;
+  justify-content: center;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 80%;
+    // background-color: rebeccapurple;
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+  }
+} 

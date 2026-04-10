@@ -622,6 +622,9 @@ body {
 .academics__blog-content p {
   font-size: 1.5rem;
 }
+.academics__blog-content a {
+  align-self: start;
+}
 
 .acticities__photos {
   width: 100%;
@@ -758,6 +761,22 @@ body {
 .footer__copyright-social a {
   font-size: 1.5rem;
   color: var(--color-white);
+}
+
+.blog-details {
+  display: flex;
+  justify-content: center;
+}
+.blog-details__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 80%;
+}
+.blog-details__container-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .privacy__title {
