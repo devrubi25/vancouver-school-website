@@ -1,401 +1,342 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TOTC Projests</title>
-    <!-- Linking SwiperJS CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
-    />
-    <!-- RE-captcha Loader -->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="up/css/main-style.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <header class="header page-width padd">
-      <a class="header__logo-link" href="index.html">
-        <img
-          src="up/images/Header_logo-removebg-preview.png"
-          alt=""
-          class="header__logo"
-        />
-      </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TOTC Projests</title>
+  <!-- Linking SwiperJS CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <!-- RE-captcha Loader -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="up/css/main-style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-      <nav class="header__nav">
-        <li><a class="header__nav-link" href="index.html">Home</a></li>
-        <li>
-          <a class="header__nav-link" href="blogs.html">Blogs</a>
-        </li>
-        <li><a class="header__nav-link" href="aboutus.html">About Us</a></li>
-        <li>
-          <a class="header__nav-link" href="activlities.html">Activlities</a>
-        </li>
-        <li><a class="header__nav-link" href="contacts.html">Contact</a></li>
-        <li>
-          <a class="header__nav-link" href="blog-details.html">Blog details</a>
-        </li>
-        <li><a class="links" href="login.html">Login</a></li>
-      </nav>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
-      <div class="hamburger">
-        <div class="hamburger__line"></div>
-        <div class="hamburger__line"></div>
-        <div class="hamburger__line"></div>
+<body>
+  <header class="header page-width padd">
+    <a class="header__logo-link" href="index.html">
+      <img src="up/images/Header_logo-removebg-preview.png" alt="" class="header__logo" />
+    </a>
+
+    <nav class="header__nav">
+      <li><a class="header__nav-link" href="index.html">Home</a></li>
+      <li>
+        <a class="header__nav-link" href="blogs.html">Blogs</a>
+      </li>
+      <li><a class="header__nav-link" href="aboutus.html">About Us</a></li>
+      <li>
+        <a class="header__nav-link" href="activlities.html">Activlities</a>
+      </li>
+      <li><a class="header__nav-link" href="contacts.html">Contact</a></li>
+      <li>
+        <a class="header__nav-link" href="blog-details.html">Blog details</a>
+      </li>
+      <li><a class="links" href="login.html">Login</a></li>
+    </nav>
+
+    <div class="hamburger">
+      <div class="hamburger__line"></div>
+      <div class="hamburger__line"></div>
+      <div class="hamburger__line"></div>
+    </div>
+  </header>
+
+  <section class="notice-bar page-width">
+    <h3 class="notice-bar__title">Announcements</h3>
+    <h3 class="notice-bar__title-mobile">Notice</h3>
+
+    <ul class="notice-bar__list">
+      <li class="notice-bar__notice">
+        <span class="notice-bar__time" data-date="2025-11-21 10:00:00"></span>
+        <span class="notice-bar__text">Admission is going on, hurry up!</span>
+      </li>
+
+      <li class="notice-bar__notice">
+        <span class="notice-bar__time" data-date="2025-11-23 09:00:00"></span>
+        <span class="notice-bar__text">Holiday on Friday due to rain.</span>
+      </li>
+
+      <li class="notice-bar__notice">
+        <span class="notice-bar__time" data-date="2025-12-02 11:00:00"></span>
+        <span class="notice-bar__text">Science exhibition next Monday.</span>
+      </li>
+
+      <li class="notice-bar__notice">
+        <span class="notice-bar__time" data-date="2025-11-27 08:00:00"></span>
+        <span class="notice-bar__text">Adiwasi Diwas next Tuesday.</span>
+      </li>
+
+      <li class="notice-bar__notice">
+        <span class="notice-bar__time" data-date="2025-11-28 11:30:00"></span>
+        <span class="notice-bar__text">Christmas Gathering this Saturday.</span>
+      </li>
+
+      <li class="notice-bar__notice">
+        <span class="notice-bar__time" data-date="2025-11-30 18:00:00"></span>
+        <span class="notice-bar__text">Quiz Competition on Monday.</span>
+      </li>
+    </ul>
+  </section>
+  <!-------- MAIN START ------->
+  <main class="container">
+    <!-- hero markup -->
+    <section class="hero page-width padd">
+      <div class="hero__content">
+        <h1 class="hero__title">
+          <span>Join Us</span> Where Learning Meets Excellency
+        </h1>
+        <p class="hero__para">
+          One of the most prominent educational institution of the world
+        </p>
+
+        <div class="hero__btns">
+          <a href="#" class="cta">Joun for free</a>
+          <a href="#" class="sec-link">Watch how it works </a>
+        </div>
       </div>
-    </header>
 
-    <section class="notice-bar page-width">
-      <h3 class="notice-bar__title">Announcements</h3>
-      <h3 class="notice-bar__title-mobile">Notice</h3>
-
-      <ul class="notice-bar__list">
-        <li class="notice-bar__notice">
-          <span class="notice-bar__time" data-date="2025-11-21 10:00:00"></span>
-          <span class="notice-bar__text">Admission is going on, hurry up!</span>
-        </li>
-
-        <li class="notice-bar__notice">
-          <span class="notice-bar__time" data-date="2025-11-23 09:00:00"></span>
-          <span class="notice-bar__text">Holiday on Friday due to rain.</span>
-        </li>
-
-        <li class="notice-bar__notice">
-          <span class="notice-bar__time" data-date="2025-12-02 11:00:00"></span>
-          <span class="notice-bar__text">Science exhibition next Monday.</span>
-        </li>
-
-        <li class="notice-bar__notice">
-          <span class="notice-bar__time" data-date="2025-11-27 08:00:00"></span>
-          <span class="notice-bar__text">Adiwasi Diwas next Tuesday.</span>
-        </li>
-
-        <li class="notice-bar__notice">
-          <span class="notice-bar__time" data-date="2025-11-28 11:30:00"></span>
-          <span class="notice-bar__text"
-            >Christmas Gathering this Saturday.</span
-          >
-        </li>
-
-        <li class="notice-bar__notice">
-          <span class="notice-bar__time" data-date="2025-11-30 18:00:00"></span>
-          <span class="notice-bar__text">Quiz Competition on Monday.</span>
-        </li>
-      </ul>
+      <figure class="hero__image-container">
+        <img src="up/images/Gemini_Generated_Image_w2pizsw2pizsw2pi-removebg-preview.png" alt="totc"
+          class="hero__image" />
+      </figure>
     </section>
-    <!-------- MAIN START ------->
-    <main class="container">
-      <!-- hero markup -->
-      <section class="hero page-width padd">
-        <div class="hero__content">
-          <h1 class="hero__title">
-            <span>Join Us</span> Where Learning Meets Excellence
-          </h1>
-          <p class="hero__para">
-            One of the most prominent educational institution of the world
+    <!-- about markup -->
+    <section class="about page-width sec-flex padd">
+      <h2 class="sec-title about__title">About</h2>
+      <div class="about__container">
+        <div class="about__container-content sec-flex">
+          <h2 class="sec-title">Welcome to Vancouver International School</h2>
+          <p>
+            At Vancouver International School, we are committed to nurturing a
+            global community of learneres. Our school proudly offers a deverse
+            and inclusive environment, ensuring that every studnt feels valued
+            and supported. We approach focases on the Academics, amotional,
+            and socila development of each student
           </p>
 
-          <div class="hero__btns">
-            <a href="#" class="cta">Joun for free</a>
-            <a href="#" class="sec-link">Watch how it works </a>
-          </div>
+          <p>
+            Our rigorous and engaging curriculum is designed to challenge and
+            inspire students. With dedicated faculty members who are experts
+            in thery fields, provide a wide range of extracurricular avtities,
+            from arts and athletics to clubs and leadership opportunities
+            allowing students to explore their passions and develop new
+            skills.
+          </p>
+          <p>
+            Our rigorous and engaging curriculum is designed to challenge and
+            inspire students. With dedicated faculty members who are experts
+            in thery fields, provide a wide range of extracurricular avtities,
+            from arts and athletics to clubs and leadership opportunities
+            allowing students to explore their passions and develop new
+            skills.
+          </p>
+
+          <a href="application-form.html" class="cta">Admission</a>
         </div>
 
-        <figure class="hero__image-container">
-          <img
-            src="up/images/Gemini_Generated_Image_w2pizsw2pizsw2pi-removebg-preview.png"
-            alt="totc"
-            class="hero__image"
-          />
+        <figure>
+          <img src="up/images/16081684-nc-state-5287789.jpg" loading="lazy" alt="" />
         </figure>
-      </section>
-      <!-- about markup -->
-      <section class="about page-width sec-flex padd">
-        <h2 class="sec-title about__title">About</h2>
-        <div class="about__container">
-          <div class="about__container-content sec-flex">
-            <h2 class="sec-title">Welcome to Vancouver International School</h2>
-            <p>
-              At Vancouver International School, we are committed to nurturing a
-              global community of learneres. Our school proudly offers a deverse
-              and inclusive environment, ensuring that every studnt feels valued
-              and supported. We approach focases on the Academics, amotional,
-              and socila development of each student
-            </p>
+      </div>
+    </section>
+    <!-- awards markup -->
+    <section class="awards page-width padd">
+      <h2 class="sec-sub-title awards__title">Awards and Recognitions</h2>
 
-            <p>
-              Our rigorous and engaging curriculum is designed to challenge and
-              inspire students. With dedicated faculty members who are experts
-              in thery fields, provide a wide range of extracurricular avtities,
-              from arts and athletics to clubs and leadership opportunities
-              allowing students to explore their passions and develop new
-              skills.
-            </p>
-            <p>
-              Our rigorous and engaging curriculum is designed to challenge and
-              inspire students. With dedicated faculty members who are experts
-              in thery fields, provide a wide range of extracurricular avtities,
-              from arts and athletics to clubs and leadership opportunities
-              allowing students to explore their passions and develop new
-              skills.
-            </p>
-
-            <a href="application-form.html" class="cta">Admission</a>
-          </div>
-
+      <div class="awards__links">
+        <a target="_blank" href="#">
+          <img src="up/images/IMG-0619-1024x779.webp" loading="lazy" alt="" />
+        </a>
+        <a target="_blank" href="#">
+          <img src="up/images/IMG-0619-1024x779.webp" loading="lazy" alt="" />
+        </a>
+        <a target="_blank" href="#">
+          <img src="up/images/IMG-0619-1024x779.webp" loading="lazy" alt="" />
+        </a>
+      </div>
+    </section>
+    <!-- blogs markup -->
+    <section class="academics page-width padd sec-flex">
+      <h2 class="sec-title">Blogs</h2>
+      <div class="academics__blogs responsive-grid">
+        <div class="academics__blog">
           <figure>
-            <img
-              src="up/images/16081684-nc-state-5287789.jpg"
-              loading="lazy"
-              alt=""
-            />
+            <img src="up/images/beautiful-moments-academic-2462074.jpg" loading="lazy" alt="" />
           </figure>
+          <div class="academics__blog-content">
+            <h2 class="sec-sub-title">PRIMARY YEARS PROGRAMME</h2>
+            <p>
+              The Primary section offers the Primary Years Programme (PYP) for
+              children aged 3 - 12. The programme nurture young students to be
+              caring, life long learnere who are Internationally open-minded
+              individuals.
+            </p>
+            <a href="blog-details.html" class="sec-link">Read More</a>
+          </div>
         </div>
-      </section>
-      <!-- awards markup -->
-      <section class="awards page-width padd">
-        <h2 class="sec-sub-title awards__title">Awards and Recognitions</h2>
+        <div class="academics__blog">
+          <figure>
+            <img src="up/images/admin-profile-1.png" loading="lazy" alt="" />
+          </figure>
+          <div class="academics__blog-content">
+            <h2 class="sec-sub-title">PRIMARY YEARS PROGRAMME</h2>
+            <p>
+              The Primary section offers the Primary Years Programme (PYP) for
+              children aged 3 - 12. The programme nurture young students to be
+              caring, life long learnere who are Internationally open-minded
+              individuals.
+            </p>
+            <a href="blog-details.html" class="sec-link">Read More</a>
+          </div>
+        </div>
+        <div class="academics__blog">
+          <figure>
+            <img src="up/images/pexels-asian-1870022.jpg" loading="lazy" alt="" />
+          </figure>
+          <div class="academics__blog-content">
+            <h2 class="sec-sub-title">PRIMARY YEARS PROGRAMME</h2>
+            <p>
+              The Primary section offers the Primary Years Programme (PYP) for
+              children aged 3 - 12. The programme nurture young students to be
+              caring, life long learnere who are Internationally open-minded
+              individuals.
+            </p>
+            <a href="blog-details.html" class="sec-link">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- activities markup -->
+    <section class="activities sec-flex page-width padd">
+      <h2 class="sec-title">ACTIVITIES</h2>
 
-        <div class="awards__links">
-          <a target="_blank" href="#">
-            <img src="up/images/IMG-0619-1024x779.webp" loading="lazy" alt="" />
-          </a>
-          <a target="_blank" href="#">
-            <img src="up/images/IMG-0619-1024x779.webp" loading="lazy" alt="" />
-          </a>
-          <a target="_blank" href="#">
-            <img src="up/images/IMG-0619-1024x779.webp" loading="lazy" alt="" />
-          </a>
+      <div class="activities__container responsive-grid">
+        <div class="acticities__photos">
+          <figure>
+            <img src="up/images/photo 1.jpg" loading="lazy" alt="" />
+          </figure>
+          <a href="#">SMART CLASSES</a>
         </div>
-      </section>
-      <!-- blogs markup -->
-      <section class="academics page-width padd sec-flex">
-        <h2 class="sec-title">Blogs</h2>
-        <div class="academics__blogs responsive-grid">
-          <div class="academics__blog">
-            <figure>
-              <img
-                src="up/images/beautiful-moments-academic-2462074.jpg"
-                loading="lazy"
-                alt=""
-              />
-            </figure>
-            <div class="academics__blog-content">
-              <h2 class="sec-sub-title">PRIMARY YEARS PROGRAMME</h2>
-              <p>
-                The Primary section offers the Primary Years Programme (PYP) for
-                children aged 3 - 12. The programme nurture young students to be
-                caring, life long learnere who are Internationally open-minded
-                individuals.
-              </p>
-              <a href="blog-details.html" class="sec-link">Read More</a>
-            </div>
-          </div>
-          <div class="academics__blog">
-            <figure>
-              <img src="up/images/admin-profile-1.png" loading="lazy" alt="" />
-            </figure>
-            <div class="academics__blog-content">
-              <h2 class="sec-sub-title">PRIMARY YEARS PROGRAMME</h2>
-              <p>
-                The Primary section offers the Primary Years Programme (PYP) for
-                children aged 3 - 12. The programme nurture young students to be
-                caring, life long learnere who are Internationally open-minded
-                individuals.
-              </p>
-              <a href="blog-details.html" class="sec-link">Read More</a>
-            </div>
-          </div>
-          <div class="academics__blog">
-            <figure>
-              <img
-                src="up/images/pexels-asian-1870022.jpg"
-                loading="lazy"
-                alt=""
-              />
-            </figure>
-            <div class="academics__blog-content">
-              <h2 class="sec-sub-title">PRIMARY YEARS PROGRAMME</h2>
-              <p>
-                The Primary section offers the Primary Years Programme (PYP) for
-                children aged 3 - 12. The programme nurture young students to be
-                caring, life long learnere who are Internationally open-minded
-                individuals.
-              </p>
-              <a href="blog-details.html" class="sec-link">Read More</a>
-            </div>
-          </div>
+        <div class="acticities__photos">
+          <figure>
+            <img src="up/images/Gemini_Generated_Image_w2pizsw2pizsw2pi.png" loading="lazy" alt="" />
+          </figure>
+          <a href="#">SMART CLASSES</a>
         </div>
-      </section>
-      <!-- activities markup -->
-      <section class="activities sec-flex page-width padd">
-        <h2 class="sec-title">ACTIVITIES</h2>
+        <div class="acticities__photos">
+          <figure>
+            <img src="up/images/jeshoots-com-laptop-3087585.jpg" loading="lazy" alt="" />
+          </figure>
+          <a href="#">SMART CLASSES</a>
+        </div>
+        <div class="acticities__photos">
+          <figure>
+            <img src="up/images/kennethr-transmission-electron-microscope-2223456.jpg" loading="lazy" alt="" />
+          </figure>
+          <a href="#">SMART CLASSES</a>
+        </div>
+        <div class="acticities__photos">
+          <figure>
+            <img src="up/images/photo 2.jpg" loading="lazy" alt="" />
+          </figure>
+          <a href="#">SMART CLASSES</a>
+        </div>
+        <div class="acticities__photos">
+          <figure>
+            <img src="up/images/tungart7-laboratory-8760345.jpg" loading="lazy" alt="" />
+          </figure>
+          <a href="#">SMART CLASSES</a>
+        </div>
+      </div>
+    </section>
+    <!-- contacts markup -->
+    <section class="contacts page-width padd">
+      <div class="contacts__content">
+        <h2 class="sec-title">Contacts Us</h2>
+        <p class="sec-para">register for dailly updates</p>
+        <article>
+          <a href="#" class="sec-para"><i class="fa-solid fa-envelope"></i> rubimurmu801@gmail.com</a>
+          <a href="#" class="sec-para"><i class="fa-solid fa-phone"></i> 7859070410</a>
+          <a href="#" class="sec-para"><i class="fa-solid fa-location-dot"></i> Gopikander dumka
+            jharkhand</a>
+        </article>
+      </div>
+      <form action="#" class="contacts__form">
+        <fieldset>
+          <label for="#">Name</label>
+          <input type="text" />
+        </fieldset>
+        <fieldset>
+          <label for="#">Email</label>
+          <input type="email" />
+        </fieldset>
+        <fieldset>
+          <label for="#">Message</label>
+          <textarea name="" rows="5" id="" placeholder="Type your message...."></textarea>
+        </fieldset>
 
-        <div class="activities__container responsive-grid">
-          <div class="acticities__photos">
-            <figure>
-              <img src="up/images/photo 1.jpg" loading="lazy" alt="" />
-            </figure>
-            <a href="#">SMART CLASSES</a>
-          </div>
-          <div class="acticities__photos">
-            <figure>
-              <img
-                src="up/images/Gemini_Generated_Image_w2pizsw2pizsw2pi.png"
-                loading="lazy"
-                alt=""
-              />
-            </figure>
-            <a href="#">SMART CLASSES</a>
-          </div>
-          <div class="acticities__photos">
-            <figure>
-              <img
-                src="up/images/jeshoots-com-laptop-3087585.jpg"
-                loading="lazy"
-                alt=""
-              />
-            </figure>
-            <a href="#">SMART CLASSES</a>
-          </div>
-          <div class="acticities__photos">
-            <figure>
-              <img
-                src="up/images/kennethr-transmission-electron-microscope-2223456.jpg"
-                loading="lazy"
-                alt=""
-              />
-            </figure>
-            <a href="#">SMART CLASSES</a>
-          </div>
-          <div class="acticities__photos">
-            <figure>
-              <img src="up/images/photo 2.jpg" loading="lazy" alt="" />
-            </figure>
-            <a href="#">SMART CLASSES</a>
-          </div>
-          <div class="acticities__photos">
-            <figure>
-              <img
-                src="up/images/tungart7-laboratory-8760345.jpg"
-                loading="lazy"
-                alt=""
-              />
-            </figure>
-            <a href="#">SMART CLASSES</a>
-          </div>
+        <div class="">
+          <input class="checkbox" type="checkbox" name="" id="" />
+          <a href="#"> I accept the Terms</a>
         </div>
-      </section>
-      <!-- contacts markup -->
-      <section class="contacts page-width padd">
-        <div class="contacts__content">
-          <h2 class="sec-title">Contacts Us</h2>
-          <p class="sec-para">register for dailly updates</p>
-          <article>
-            <a href="#" class="sec-para"
-              ><i class="fa-solid fa-envelope"></i> rubimurmu801@gmail.com</a
-            >
-            <a href="#" class="sec-para"
-              ><i class="fa-solid fa-phone"></i> 7859070410</a
-            >
-            <a href="#" class="sec-para"
-              ><i class="fa-solid fa-location-dot"></i> Gopikander dumka
-              jharkhand</a
-            >
-          </article>
-        </div>
-        <form action="#" class="contacts__form">
-          <fieldset>
-            <label for="#">Name</label>
-            <input type="text" />
-          </fieldset>
-          <fieldset>
-            <label for="#">Email</label>
-            <input type="email" />
-          </fieldset>
-          <fieldset>
-            <label for="#">Message</label>
-            <textarea
-              name=""
-              rows="5"
-              id=""
-              placeholder="Type your message...."
-            ></textarea>
-          </fieldset>
+        <input type="button" value="Submit" />
+      </form>
+    </section>
+    <!-- footer markup -->
+    <footer class="footer page-width padd">
+      <div class="footer__container responsive-grid">
+        <figure>
+          <img src="up/images/Header_logo-removebg-preview.png" loading="lazy" alt="" />
+        </figure>
 
+        <div class="footer__courses">
+          <h2 class="sec-sub-title">Courses</h2>
           <div class="">
-            <input class="checkbox" type="checkbox" name="" id="" />
-            <a href="#"> I accept the Terms</a>
-          </div>
-          <input type="button" value="Submit" />
-        </form>
-      </section>
-      <!-- footer markup -->
-      <footer class="footer page-width padd">
-        <div class="footer__container responsive-grid">
-          <figure>
-            <img
-              src="up/images/Header_logo-removebg-preview.png"
-              loading="lazy"
-              alt=""
-            />
-          </figure>
-
-          <div class="footer__courses">
-            <h2 class="sec-sub-title">Courses</h2>
-            <div class="">
-              <a href="#">Primary Years Programme</a>
-              <a href="#">Middle Years programme </a>
-              <a href="#">Middle Years programme </a>
-            </div>
-          </div>
-          <div class="footer__courses">
-            <h2 class="sec-sub-title">About</h2>
-            <div class="">
-              <a href="contacts.html">Contact</a>
-              <a href="#">Help/Supprt</a>
-              <a href="#">FAQ</a>
-              <a href="#">Terms and Conditions</a>
-            </div>
+            <a href="#">Primary Years Programme</a>
+            <a href="#">Middle Years programme </a>
+            <a href="#">Middle Years programme </a>
           </div>
         </div>
-        <br />
-        <hr />
-        <br />
-        <div class="footer__copyright">
-          <div class="footer__copyright-links">
-            <a href="#">2024 Vencouver . All right reserved.</a>
-            <a href="#">Privacy</a>
-            <a href="#">Policy</a>
-            <a href="#">Terms os Service</a>
-          </div>
-
-          <div class="footer__copyright-social">
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <div class="footer__courses">
+          <h2 class="sec-sub-title">About</h2>
+          <div class="">
+            <a href="contacts.html">Contact</a>
+            <a href="#">Help/Supprt</a>
+            <a href="#">FAQ</a>
+            <a href="#">Terms and Conditions</a>
           </div>
         </div>
-      </footer>
-    </main>
-    <!-- Linking SwiperJS script -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <!-- Custom Script -->
-    <script src="up/js/app.js"></script>
-  </body>
+      </div>
+      <br />
+      <hr />
+      <br />
+      <div class="footer__copyright">
+        <div class="footer__copyright-links">
+          <a href="#">2024 Vencouver . All right reserved.</a>
+          <a href="#">Privacy</a>
+          <a href="#">Policy</a>
+          <a href="#">Terms os Service</a>
+        </div>
+
+        <div class="footer__copyright-social">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </footer>
+  </main>
+  <!-- Linking SwiperJS script -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <!-- Custom Script -->
+  <script src="up/js/app.js"></script>
+</body>
+
 </html>
